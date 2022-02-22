@@ -1,0 +1,131 @@
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'SF Pro';
+  font-weight: 400;
+  margin: 0;
+  color: #161C24;
+  line-height: 1.3;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+main {}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  font-weight: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+svg {
+  pointer-events: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.primary--link {
+  font-size: 15px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  img {
+    display: flex;
+    margin-left: 39px;
+  }
+}
+
+.button--primary {
+  background: #4295E4;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  outline: none;
+
+  &:hover {
+    background: #56A9F8;
+    cursor: pointer;
+  }
+
+  &:focus {
+    background: #2E81D0;
+  }
+}
+
+.section-header {
+  text-align: center;
+
+  &__title {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-header {
+    &__title {
+      font-size: 22px;
+    }
+  }
+}

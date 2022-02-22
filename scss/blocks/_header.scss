@@ -1,0 +1,282 @@
+.header {
+
+  &-deal {
+    padding: 9px 0px;
+    background: #454F5B;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    z-index: 1100;
+
+    &__container {
+      position: relative;
+    }
+
+    &__text {
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 0.12em;
+      text-align: center;
+    }
+
+    &__link {
+      font-weight: 200;
+      font-size: 16px;
+      letter-spacing: 0.12em;
+      color: #FFFFFF;
+      text-align: center;
+      text-decoration-line: underline;
+
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    position: relative;
+    z-index: 10000;
+  }
+
+  &-logo {
+    max-width: 50px;
+    width: 100px;
+
+    img {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  &-nav {
+    &__list {
+      display: flex;
+      align-items: center;
+
+      &__li {
+        margin-right: 32px;
+        display: flex;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        img {
+          margin-left: 8px;
+        }
+      }
+
+      &__link {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 24px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &-panel {
+    display: flex;
+
+    &__phone {
+      display: flex;
+      align-items: center;
+      margin-right: 30px;
+
+      &__icon {
+        max-width: 20px;
+        width: 100%;
+        margin-right: 8px;
+
+        img {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+
+      &__num {
+        font-weight: normal;
+        font-size: 18px;
+        color: #454F5B;
+        line-height: 21px;
+      }
+    }
+
+    &__fav {
+      margin-right: 24px;
+      max-width: 32px;
+      width: 100%;
+      z-index: 10000;
+    }
+
+    &__cart {
+      max-width: 32px;
+      width: 100%;
+      z-index: 10000;
+    }
+  }
+}
+
+.burger-menu {
+  display: none;
+}
+
+
+.burger-menu__button {
+  display: inline-block;
+  position: absolute;
+  top: 0.5rem;
+  left: -1rem;
+  z-index: 10000;
+  width: 60px;
+  height: 60px;
+
+  transition: 0.5s;
+}
+
+
+.burger-menu__active .burger-menu__button,
+.burger-menu__active .burger-menu__lines {
+  background-color: transparent;
+}
+
+.burger-menu__active .burger-menu__lines::before {
+  top: 0;
+  transform: rotate(45deg);
+  background: #23283B;
+  width: 30px;
+
+  transition: .2s;
+}
+
+.burger-menu__active .burger-menu__lines::after {
+  top: 0;
+  transform: rotate(-45deg);
+  background: #23283B;
+  transition: .2s;
+  width: 30px;
+}
+
+
+.burger-menu__lines,
+.burger-menu__lines::after,
+.burger-menu__lines::before {
+  position: absolute;
+  max-width: 30px;
+  height: 2px;
+  background: #23283B;
+  border-radius: 0px;
+}
+
+.burger-menu__lines {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(-1, 1);
+  width: 20px;
+}
+
+.burger-menu__lines::before {
+  content: '';
+  top: -8px;
+  width: 20px;
+}
+
+.burger-menu__lines::after {
+  content: '';
+  top: 8px;
+  width: 20px;
+}
+
+.burger-menu__nav {
+  position: fixed;
+  top: -100%;
+  z-index: 100;
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  background: #FFFFFF;
+  overflow-y: auto;
+  left: 0;
+  width: 100vw;
+  text-align: start;
+  list-style-type: none;
+  padding-inline-start: 0px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  padding-bottom: 38px;
+
+  transition: 0.5s;
+}
+
+
+.burger-menu__active .burger-menu__nav {
+  top: 0;
+}
+
+.burger__link {
+  color: #23283B;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.burger-menu__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200vw;
+  height: 100vh;
+  z-index: 100;
+}
+
+.burger-menu__active .burger-menu__overlay {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+@media (max-width: 992px) {
+  .header {
+    box-shadow: inset 0px -1px 0px #C4CDD5;
+    &-deal {
+      &__text {
+        font-weight: 300;
+      }
+
+      &__link {
+        display: none;
+      }
+    }
+
+    &__inner {
+      justify-content: flex-end;
+    }
+
+    &-logo {
+      display: none;
+    }
+
+    &-nav {
+      display: none;
+    }
+
+    &-panel {
+      &__phone {
+        display: none;
+      }
+    }
+  }
+
+  .burger-menu {
+    display: block;
+  }
+}
