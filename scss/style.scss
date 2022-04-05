@@ -7,6 +7,8 @@
 
 /* Header */
 @import 'blocks/header';
+
+/* === INDEX === */
 /* Offer */
 @import 'blocks/offer';
 /* Numbers */
@@ -15,3 +17,23 @@
 @import 'blocks/benefits';
 /* Categories */
 @import 'blocks/categories';
+/* Recently */
+@import 'blocks/recently';
+/* Recall */
+@import 'blocks/recall';
+
+/* === CATALOG MAIN === */
+/* Catalog Main (section) */
+@import 'blocks/catalog-main';
+
+
+/* Cart */
+@import 'blocks/cart';
+
+/* Footer */
+@import 'blocks/footer';
+
+
+
+/* Product Elements */
+@import 'blocks/productElements';

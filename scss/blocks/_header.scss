@@ -85,6 +85,7 @@
 
   &-panel {
     display: flex;
+    align-items: center;
 
     &__phone {
       display: flex;
@@ -112,15 +113,34 @@
 
     &__fav {
       margin-right: 24px;
-      max-width: 32px;
-      width: 100%;
+      width: 42px;
+      height: 32px;
       z-index: 10000;
+      cursor: pointer;
+
+      &__button {
+        border: none;
+        outline: none;
+        background: transparent;
+        margin: 0 auto;
+      }
+
+      &__icon {
+        width: 100%;
+        margin: 0 auto;
+      }
     }
 
     &__cart {
-      max-width: 32px;
-      width: 100%;
+      width: 42px;
+      height: 32px;
       z-index: 10000;
+      cursor: pointer;
+
+      &__icon {
+        width: 100%;
+        margin: 0 auto;
+      }
     }
   }
 }

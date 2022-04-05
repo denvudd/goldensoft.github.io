@@ -30,9 +30,9 @@
         </div>
         <nav class="header-nav">
           <ul class="header-nav__list">
-            <li class="header-nav__list__li"><a href="#" class="header-nav__list__link">Главная</a></li>
+            <li class="header-nav__list__li"><a href="index.html" class="header-nav__list__link">Главная</a></li>
             <li class="header-nav__list__li">
-              <a href="#" class="header-nav__list__link">Каталог</a>
+              <a href="catalog-main.html" class="header-nav__list__link">Каталог</a>
               <img class="header-nav__list__arrow" src="img/header/arrow-down.svg" alt="">
             </li>
             <li class="header-nav__list__li"><a href="#" class="header-nav__list__link">Оптовая продажа</a></li>
@@ -45,12 +45,12 @@
             <a class="header-panel__phone__num" href="tel:+79665588499">+7 (966) 55 88 499</a>
           </div>
           <div class="header-panel__fav">
-            <a href="#" class="header-panel__fav__button"><img src="img/header/fav.png" alt=""
-                class="header-panel__fav__icon"></a>
+            <button class="header-panel__fav__button"><img src="img/header/fav.png" alt=""
+                class="header-panel__fav__icon"></button>
           </div>
           <div class="header-panel__cart">
-            <a href="#" class="header-panel__fav__button"><img src="img/header/cart.png" alt=""
-                class="header-panel__cart__icon"></a>
+            <button class="header-panel__fav__button" data-modal><img src="img/header/cart.png" alt=""
+                class="header-panel__cart__icon"></button>
           </div>
         </div>
         <div class="burger-menu">
@@ -93,8 +93,12 @@
                   <p>Цена</p>
                 </div>
                 <div class="offer-item__text__price__num">
-                  <span class="offer-item__text__price__currentNum">33 000₽</span>
-                  <span class="offer-item__text__price__oldNum">37 000₽</span>
+                  <div class="product-price__currentPrice">
+                    <span>33 000₽</span>
+                  </div>
+                  <div class="product-price__oldPrice">
+                    <span>37 000₽</span>
+                  </div>
                 </div>
                 <div class="offer-item__text__button">
                   <button class="button--primary">Добавить в корзину</button>
@@ -121,8 +125,12 @@
                   <p>Цена</p>
                 </div>
                 <div class="offer-item__text__price__num">
-                  <span class="offer-item__text__price__currentNum">33 000₽</span>
-                  <span class="offer-item__text__price__oldNum">37 000₽</span>
+                  <div class="product-price__currentPrice">
+                    <span>33 000₽</span>
+                  </div>
+                  <div class="product-price__oldPrice">
+                    <span>37 000₽</span>
+                  </div>
                 </div>
                 <div class="offer-item__text__button">
                   <button class="button--primary">Добавить в корзину</button>
@@ -149,8 +157,12 @@
                   <p>Цена</p>
                 </div>
                 <div class="offer-item__text__price__num">
-                  <span class="offer-item__text__price__currentNum">33 000₽</span>
-                  <span class="offer-item__text__price__oldNum">37 000₽</span>
+                  <div class="product-price__currentPrice">
+                    <span>33 000₽</span>
+                  </div>
+                  <div class="product-price__oldPrice">
+                    <span>37 000₽</span>
+                  </div>
                 </div>
                 <div class="offer-item__text__button">
                   <button class="button--primary">Добавить в корзину</button>
@@ -220,12 +232,451 @@
     </section>
     <section class="categories">
       <div class="container">
-        
+        <div class="section-header">
+          <div class="section-header__title">
+            <h1>Категории</h1>
+          </div>
+        </div>
+        <div class="categories__inner">
+          <div class="categories-item">
+            <div class="categories-item__panel">
+              <div class="categories-item__panel__title">Для отелей</div>
+              <div class="categories-item__panel__button">
+                <a href="#" target="_blank" class="button--primary">Перейти</a>
+              </div>
+            </div>
+            <a href="#" target="_blank" class="categories-item__photo">
+              <img src="img/categories/categ1.jpg" alt="Categories Photo">
+            </a>
+          </div>
+          <div class="categories-item">
+            <div class="categories-item__panel">
+              <div class="categories-item__panel__title">Для шкафчиков</div>
+              <div class="categories-item__panel__button">
+                <a href="#" target="_blank" class="button--primary">Перейти</a>
+              </div>
+            </div>
+            <a href="#" target="_blank" class="categories-item__photo">
+              <img src="img/categories/categ2.jpg" alt="Categories Photo">
+            </a>
+          </div>
+          <div class="categories-item">
+            <div class="categories-item__panel">
+              <div class="categories-item__panel__title">Для офисов</div>
+              <div class="categories-item__panel__button">
+                <a href="#" target="_blank" class="button--primary">Перейти</a>
+              </div>
+            </div>
+            <a href="#" target="_blank" class="categories-item__photo">
+              <img src="img/categories/categ3.jpg" alt="Categories Photo">
+            </a>
+          </div>
+          <div class="categories-item">
+            <div class="categories-item__panel">
+              <div class="categories-item__panel__title">Замки для дома</div>
+              <div class="categories-item__panel__button">
+                <a href="#" target="_blank" class="button--primary">Перейти</a>
+              </div>
+            </div>
+            <a href="#" target="_blank" class="categories-item__photo">
+              <img src="img/categories/categ4.jpg" alt="Categories Photo">
+            </a>
+          </div>
+        </div>
+        <div class="categories-moreButton">
+          <button class="button--primary">Все категории</button>
+        </div>
+      </div>
+    </section>
+    <section class="recently">
+      <div class="container">
+        <div class="recently-head">
+          <div class="recently-head__title">
+            <h1>Наши популярные продукты</h1>
+          </div>
+        </div>
+        <div class="recently__inner recently-slider">
+          <div class="recently-item">
+            <div class="recently-item__photo">
+              <img src="img/recently/recently1.jpg" class="recently-item__img" alt="Recently Product Photo">
+              <div class="isInStock">
+                <div class="isInStock-checker">
+                  <img src="img/product-elements/inStock.png" alt="In Stock Check" class="isInStock-checker__icon">
+                </div>
+                <div class="isInStock-text">
+                  <span class="isInStock-text__span">В наличии</span>
+                </div>
+              </div>
+              <button class="inGift">
+                <div class="inGift-checker">
+                  <div class="inGift-checker__icon">
+                    <img src="img/product-elements/gift1.png" alt="Gift Icon">
+                  </div>
+                </div>
+                <div class="inGift-text">
+                  <span class="inGift-text__span">Подарок</span>
+                </div>
+              </button>
+              <div class="sale">
+                <span class="sale-text">SALE</span>
+              </div>
+            </div>
+            <div class="recently-item__text">
+              <div class="recently-item__text__title">
+                <h4>Дверной Замок Golden Soft для отеля</h4>
+              </div>
+              <div class="recently-item__text__price">
+                <div class="product-price__currentPrice">
+                  <span>33 000₽</span>
+                </div>
+                <div class="product-price__oldPrice">
+                  <span>37 000₽</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recently-item">
+            <div class="recently-item__photo">
+              <img src="img/recently/recently2.jpg" class="recently-item__img" alt="Recently Product Photo">
+              <div class="isInStock">
+                <div class="isInStock-checker">
+                  <img src="img/product-elements/inStock.png" alt="In Stock Check" class="isInStock-checker__icon">
+                </div>
+                <div class="isInStock-text">
+                  <span class="isInStock-text__span">В наличии</span>
+                </div>
+              </div>
+              <button class="inGift">
+                <div class="inGift-checker">
+                  <div class="inGift-checker__icon">
+                    <img src="img/product-elements/gift1.png" alt="Gift Icon">
+                  </div>
+                </div>
+                <div class="inGift-text">
+                  <span class="inGift-text__span">Подарок</span>
+                </div>
+              </button>
+              <div class="sale">
+                <span class="sale-text">SALE</span>
+              </div>
+            </div>
+            <div class="recently-item__text">
+              <div class="recently-item__text__title">
+                <h4>Вариативный замок Golden Soft для отеля</h4>
+              </div>
+              <div class="recently-item__text__price">
+                <div class="product-price__currentPrice">
+                  <span>7 000₽</span>
+                </div>
+                <div class="product-price__oldPrice">
+                  <span>8 000₽</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recently-item">
+            <div class="recently-item__photo">
+              <img src="img/recently/recently3.jpg" class="recently-item__img" alt="Recently Product Photo">
+              <div class="isInStock">
+                <div class="isInStock-checker">
+                  <img src="img/product-elements/inStock.png" alt="In Stock Check" class="isInStock-checker__icon">
+                </div>
+                <div class="isInStock-text">
+                  <span class="isInStock-text__span">В наличии</span>
+                </div>
+              </div>
+              <button class="inGift">
+                <div class="inGift-checker">
+                  <div class="inGift-checker__icon">
+                    <img src="img/product-elements/gift1.png" alt="Gift Icon">
+                  </div>
+                </div>
+                <div class="inGift-text">
+                  <span class="inGift-text__span">Подарок</span>
+                </div>
+              </button>
+              <div class="sale">
+                <span class="sale-text">SALE</span>
+              </div>
+            </div>
+            <div class="recently-item__text">
+              <div class="recently-item__text__title">
+                <h4>Дверной Замок Golden Soft для офиса</h4>
+              </div>
+              <div class="recently-item__text__price">
+                <div class="product-price__currentPrice">
+                  <span>33 000₽</span>
+                </div>
+                <div class="product-price__oldPrice">
+                  <span>39 000₽</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recently-item">
+            <div class="recently-item__photo">
+              <img src="img/recently/recently3.jpg" class="recently-item__img" alt="Recently Product Photo">
+              <div class="isInStock">
+                <div class="isInStock-checker">
+                  <img src="img/product-elements/inStock.png" alt="In Stock Check" class="isInStock-checker__icon">
+                </div>
+                <div class="isInStock-text">
+                  <span class="isInStock-text__span">В наличии</span>
+                </div>
+              </div>
+              <button class="inGift">
+                <div class="inGift-checker">
+                  <div class="inGift-checker__icon">
+                    <img src="img/product-elements/gift1.png" alt="Gift Icon">
+                  </div>
+                </div>
+                <div class="inGift-text">
+                  <span class="inGift-text__span">Подарок</span>
+                </div>
+              </button>
+              <div class="sale">
+                <span class="sale-text">SALE</span>
+              </div>
+            </div>
+            <div class="recently-item__text">
+              <div class="recently-item__text__title">
+                <h4>Дверной Замок Golden Soft для офиса</h4>
+              </div>
+              <div class="recently-item__text__price">
+                <div class="product-price__currentPrice">
+                  <span>9 000₽</span>
+                </div>
+                <div class="product-price__oldPrice">
+                  <span>12 000₽</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recently-item">
+            <div class="recently-item__photo">
+              <img src="img/recently/recently1.jpg" class="recently-item__img" alt="Recently Product Photo">
+              <div class="isInStock">
+                <div class="isInStock-checker">
+                  <img src="img/product-elements/inStock.png" alt="In Stock Check" class="isInStock-checker__icon">
+                </div>
+                <div class="isInStock-text">
+                  <span class="isInStock-text__span">В наличии</span>
+                </div>
+              </div>
+              <button class="inGift">
+                <div class="inGift-checker">
+                  <div class="inGift-checker__icon">
+                    <img src="img/product-elements/gift1.png" alt="Gift Icon">
+                  </div>
+                </div>
+                <div class="inGift-text">
+                  <span class="inGift-text__span">Подарок</span>
+                </div>
+              </button>
+              <div class="sale">
+                <span class="sale-text">SALE</span>
+              </div>
+            </div>
+            <div class="recently-item__text">
+              <div class="recently-item__text__title">
+                <h4>Дверной Замок Golden Soft для офиса</h4>
+              </div>
+              <div class="recently-item__text__price">
+                <div class="product-price__currentPrice">
+                  <span>9 000₽</span>
+                </div>
+                <div class="product-price__oldPrice">
+                  <span>12 000₽</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recently-item">
+            <div class="recently-item__photo">
+              <img src="img/recently/recently2.jpg" class="recently-item__img" alt="Recently Product Photo">
+              <div class="isInStock">
+                <div class="isInStock-checker">
+                  <img src="img/product-elements/inStock.png" alt="In Stock Check" class="isInStock-checker__icon">
+                </div>
+                <div class="isInStock-text">
+                  <span class="isInStock-text__span">В наличии</span>
+                </div>
+              </div>
+              <button class="inGift">
+                <div class="inGift-checker">
+                  <div class="inGift-checker__icon">
+                    <img src="img/product-elements/gift1.png" alt="Gift Icon">
+                  </div>
+                </div>
+                <div class="inGift-text">
+                  <span class="inGift-text__span">Подарок</span>
+                </div>
+              </button>
+              <div class="sale">
+                <span class="sale-text">SALE</span>
+              </div>
+            </div>
+            <div class="recently-item__text">
+              <div class="recently-item__text__title">
+                <h4>Дверной Замок Golden Soft для офиса</h4>
+              </div>
+              <div class="recently-item__text__price">
+                <div class="product-price__currentPrice">
+                  <span>9 000₽</span>
+                </div>
+                <div class="product-price__oldPrice">
+                  <span>12 000₽</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="recall">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header__title">
+            <h1>Мы Вам перезвоним</h1>
+          </div>
+        </div>
+        <div class="recall-text">
+          <p>Если у вас возникли какие-то вопросы или проблемы, заполните форму и мы Вам перезвоним.</p>
+        </div>
+        <form action="#" class="recall-form">
+          <div class="recall-form__item">
+            <input required type="text" placeholder="Ваше имя" class="recall-form__item__input">
+          </div>
+          <div class="recall-form__item">
+            <input required type="email" placeholder="Ваш Email" class="recall-form__item__input">
+          </div>
+          <div class="recall-form__item">
+            <button type="submit" class="button--primary">Отправить</button>
+          </div>
+        </form>
       </div>
     </section>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer-col footer-col--logo">
+          <dia class="footer-col--logo__icon">
+            <img src="img/footer/Logo.svg" alt="Logo Icon Footer">
+          </dia>
+          <div class="footer-col--logo__social">
+            <a href="#" class="footer-col--logo__social__item">
+              <img src="img/footer/vk.svg" alt="Social Logo Icon">
+            </a>
+            <a href="#" class="footer-col--logo__social__item">
+              <img src="img/footer/twitter.svg" alt="Social Logo Icon">
+            </a>
+            <a href="#" class="footer-col--logo__social__item">
+              <img src="img/footer/facebook.svg" alt="Social Logo Icon">
+            </a>
+          </div>
+        </div>
+        <nav class="footer-col--menu__nav">
+          <div class="footer-col footer-col--menu">
+            <ul class="footer-col--menu__ul">
+              <div class="footer-col--menu__title">
+                <h3>Навигация</h3>
+              </div>
+              <li class="footer-col--menu__li">
+                <a href="#" class="footer-col--menu__link">Главная</a>
+              </li>
+              <li class="footer-col--menu__li">
+                <a href="#" class="footer-col--menu__link">Каталог</a>
+              </li>
+              <li class="footer-col--menu__li">
+                <a href="#" class="footer-col--menu__link">Оптовая продажа</a>
+              </li>
+              <li class="footer-col--menu__li">
+                <a href="#" class="footer-col--menu__link">О нас</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col footer-col--menu">
+            <ul class="footer-col--menu__ul">
+              <div class="footer-col--menu__title">
+                <h3>Наши контакты</h3>
+              </div>
+              <li class="footer-col--menu__subtitle">
+                <h3>Телефоны</h3>
+              </li>
+              <li class="footer-col--menu__li">
+                <a href="#" class="footer-col--menu__link">+7 (988) 565 00 38</a>
+              </li>
+              <li class="footer-col--menu__li">
+                <a href="#" class="footer-col--menu__link">+375 33 662 82 56</a>
+              </li>
+              <li class="footer-col--menu__subtitle">
+                <h3>Email</h3>
+              </li>
+              <li class="footer-col--menu__li">
+                <a href="#" class="footer-col--menu__link">vladpertcev@mail.ru</a>
+              </li>
+              <li class="footer-col--menu__li">
+                <a href="#" class="footer-col--menu__link">korobko416@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col footer-col--menu">
+            <ul class="footer-col--menu__ul">
+              <div class="footer-col--menu__title">
+                <h3>Наш адрес</h3>
+              </div>
+              <li class="footer-col--menu__li">
+                <p>Россия, Ростов-на-Дону ул. Богачева, 16</p>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col footer-col--menu">
+            <ul class="footer-col--menu__ul">
+              <div class="footer-col--menu__title">
+                <h3>Информация</h3>
+              </div>
+              <li class="footer-col--menu__li">
+                <a href="#" class="footer-col--menu__link">Доставка и оплата</a>
+              </li>
+              <li class="footer-col--menu__li">
+                <a href="#" class="footer-col--menu__link">Гарантии</a>
+              </li>
+              <li class="footer-col--menu__li">
+                <a href="#" class="footer-col--menu__link">Возврат товара</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-watermark">
+        <div class="footer-watermark__text">
+          <p>© 2021 Golden Soft All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="cart">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <form action="#">
+          <div class="modal-header">
+            <div class="modal-header__title">
+              <h1>Корзина</h1>
+            </div>
+            <button class="modal-header__close">
+              <img src="img/cart/close.svg" data-close alt="Close Button">
+            </button>
+          </div>
+          <div class="modal-header__line"></div>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
-<script src="js/main.js"></script>
+<script src="js/mobileMenu.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/counter.js"></script>
 <script src="js/sliders.js"></script>
+
 </html>
