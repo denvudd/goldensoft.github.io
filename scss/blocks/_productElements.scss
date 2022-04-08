@@ -32,3 +32,41 @@
     }
   }
 }
+
+.product-rate {
+  display: flex;
+  align-items: baseline;
+
+  &__reviews {
+    font-weight: 400;
+    font-size: 13px;
+    color: #454F5B;
+  }
+}
+
+.product-stars {
+  display: flex;
+  margin-right: 8px !important;
+
+  &__item {
+    margin-right: 6px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      max-width: 16px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .product-stars {
+    margin-right: 4px;
+
+    &__item {
+      margin-right: 2px;
+    }
+  }
+}

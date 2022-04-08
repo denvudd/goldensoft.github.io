@@ -659,23 +659,238 @@
   <div class="cart">
     <div class="modal__dialog">
       <div class="modal__content">
-        <form action="#">
-          <div class="modal-header">
-            <div class="modal-header__title">
-              <h1>Корзина</h1>
-            </div>
-            <button class="modal-header__close">
-              <img src="img/cart/close.svg" data-close alt="Close Button">
-            </button>
+        <div class="modal-header">
+          <div class="modal-header__title">
+            <h1>Корзина</h1>
           </div>
-          <div class="modal-header__line"></div>
-        </form>
+          <button class="modal-header__close">
+            <img src="img/cart/close.svg" data-close alt="Close Button">
+          </button>
+        </div>
+        <div class="modal-products">
+          <div class="modal-products__item">
+            <div class="modal-products__item__photo">
+              <img src="img/cart/product-photo1.png" alt="Product Photo">
+            </div>
+            <div class="modal-products__item__panel">
+              <div class="modal-products__item__title">
+                <h3>Дверной Замок Golden Soft для офиса</h3>
+              </div>
+              <div class="modal-products__item__gift">
+                <div class="modal-products__item__gift__icon">
+                  <span>+</span>
+                </div>
+                <div class="modal-products__item__gift__text">
+                  <p>Подарок: <span>“Приложение к замкам Golden Service”</span></p>
+                </div>
+              </div>
+              <div class="modal-products__item__count">
+                <div class="modal-products__item__count__minus">
+                  <button>-</button>
+                </div>
+                <div class="modal-products__item__count__num">
+                  <input required type="text" value="2">
+                </div>
+                <div class="modal-products__item__count__plus">
+                  <button>+</button>
+                </div>
+              </div>
+              <button class="modal-products__item__delete">
+                <div class="modal-products__item__delete__icon">
+                  <img src="img/cart/delete-icon.svg" alt="Delete Icon">
+                </div>
+                <div class="modal-products__item__delete__text">
+                  <p>Удалить</p>
+                </div>
+              </button>
+              <div class="modal-products__item__price">
+                <span>33 000₽</span>
+              </div>
+            </div>
+          </div>
+          <div class="modal-products__item__gift gift--mobile">
+            <div class="modal-products__item__gift__icon">
+              <span>+</span>
+            </div>
+            <div class="modal-products__item__gift__text">
+              <p>Подарок: <span>“Приложение к замкам Golden Service”</span></p>
+            </div>
+          </div>
+          <div class="modal-products__panel">
+            <div class="modal-products__panel__total">
+              <p>Итого:</p>
+              <span class="modal-products__panel__total__num">66 000₽</span>
+            </div>
+            <div class="modal-products__panel__buttons">
+              <button type="submit" class="button--primary modal-products__panel__submit">Оформить заказ</button>
+              <button class="modal-products__panel__continue">Продолжить покупки</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-line"></div>
+        <div class="modal-other">
+          <div class="modal-other__title">
+            <h2>С этим покупают</h2>
+          </div>
+          <div class="modal-other__items">
+            <div class="modal-other__item">
+              <a href="#" class="modal-other__item__photo">
+                <img src="img/cart/other-product1.png" alt="Other Product Photo">
+              </a>
+              <div class="modal-other__item__text">
+                <div class="modal-other__item__name">
+                  <a href="#">Дверной Замок Golden Soft для офиса</a>
+                </div>
+                <div class="modal-other__item__rate product-rate">
+                  <ul class="product-stars">
+                    <li class="product-stars__item">
+                      <img src="img/cart/full-star.svg" alt="Rate star full">
+                    </li>
+                    <li class="product-stars__item">
+                      <img src="img/cart/full-star.svg" alt="Rate star full">
+                    </li>
+                    <li class="product-stars__item">
+                      <img src="img/cart/full-star.svg" alt="Rate star full">
+                    </li>
+                    <li class="product-stars__item">
+                      <img src="img/cart/empty-star.svg" alt="Rate star empty">
+                    </li>
+                    <li class="product-stars__item">
+                      <img src="img/cart/empty-star.svg" alt="Rate star empty">
+                    </li>
+                  </ul>
+                  <div class="product-rate__reviews">
+                    <div class="product-rate__reviews__count">
+                      <p><span>(12)</span> отзывов</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-other__item__price">
+                  <div class="product-price__currentPrice">
+                    <span>9 000₽</span>
+                  </div>
+                  <div class="product-price__oldPrice">
+                    <span>12000₽</span>
+                  </div>
+                </div>
+              </div>
+              <button class="modal-other__item__button">
+                <div class="modal-other__item__button__icon">
+                  <img src="img/cart/add-icon.svg" alt="Add Icon">
+                </div>
+                <div class="modal-other__item__button__text">
+                  <p>Добавить</p>
+                </div>
+              </button>
+            </div>
+            <div class="modal-other__item">
+              <a href="#" class="modal-other__item__photo">
+                <img src="img/cart/other-product1.png" alt="Other Product Photo">
+              </a>
+              <div class="modal-other__item__text">
+                <div class="modal-other__item__name">
+                  <a href="#">Дверной Замок Golden Soft для офиса</a>
+                </div>
+                <div class="modal-other__item__rate product-rate">
+                  <ul class="product-stars">
+                    <li class="product-stars__item">
+                      <img src="img/cart/full-star.svg" alt="Rate star full">
+                    </li>
+                    <li class="product-stars__item">
+                      <img src="img/cart/full-star.svg" alt="Rate star full">
+                    </li>
+                    <li class="product-stars__item">
+                      <img src="img/cart/full-star.svg" alt="Rate star full">
+                    </li>
+                    <li class="product-stars__item">
+                      <img src="img/cart/empty-star.svg" alt="Rate star empty">
+                    </li>
+                    <li class="product-stars__item">
+                      <img src="img/cart/empty-star.svg" alt="Rate star empty">
+                    </li>
+                  </ul>
+                  <div class="product-rate__reviews">
+                    <div class="product-rate__reviews__count">
+                      <p><span>(12)</span> отзывов</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-other__item__price">
+                  <div class="product-price__currentPrice">
+                    <span>9 000₽</span>
+                  </div>
+                  <div class="product-price__oldPrice">
+                    <span>12000₽</span>
+                  </div>
+                </div>
+              </div>
+              <button class="modal-other__item__button">
+                <div class="modal-other__item__button__icon">
+                  <img src="img/cart/add-icon.svg" alt="Add Icon">
+                </div>
+                <div class="modal-other__item__button__text">
+                  <p>Добавить</p>
+                </div>
+              </button>
+            </div>
+            <div class="modal-other__item">
+              <a href="#" class="modal-other__item__photo">
+                <img src="img/cart/other-product1.png" alt="Other Product Photo">
+              </a>
+              <div class="modal-other__item__text">
+                <div class="modal-other__item__name">
+                  <a href="#">Дверной Замок Golden Soft для офиса</>
+                </div>
+                <div class="modal-other__item__rate product-rate">
+                  <ul class="product-stars">
+                    <li class="product-stars__item">
+                      <img src="img/cart/full-star.svg" alt="Rate star full">
+                    </li>
+                    <li class="product-stars__item">
+                      <img src="img/cart/full-star.svg" alt="Rate star full">
+                    </li>
+                    <li class="product-stars__item">
+                      <img src="img/cart/full-star.svg" alt="Rate star full">
+                    </li>
+                    <li class="product-stars__item">
+                      <img src="img/cart/empty-star.svg" alt="Rate star empty">
+                    </li>
+                    <li class="product-stars__item">
+                      <img src="img/cart/empty-star.svg" alt="Rate star empty">
+                    </li>
+                  </ul>
+                  <div class="product-rate__reviews">
+                    <div class="product-rate__reviews__count">
+                      <p><span>(12)</span> отзывов</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-other__item__price">
+                  <div class="product-price__currentPrice">
+                    <span>9 000₽</span>
+                  </div>
+                  <div class="product-price__oldPrice">
+                    <span>12000₽</span>
+                  </div>
+                </div>
+              </div>
+              <button class="modal-other__item__button">
+                <div class="modal-other__item__button__icon">
+                  <img src="img/cart/add-icon.svg" alt="Add Icon">
+                </div>
+                <div class="modal-other__item__button__text">
+                  <p>Добавить</p>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </body>
 <script src="js/mobileMenu.js"></script>
-<script src="js/cart.js"></script>
+<script src="js/modal.js"></script>
 <script src="js/counter.js"></script>
 <script src="js/sliders.js"></script>
 
